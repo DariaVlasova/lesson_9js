@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div class="container">
+    <h1>6.Дано масив елементів. Усі елементи, які більші за перший елемент помножити на 2
+
+
+</h1>
+    <a href="./index.html">Повернутись до задач</a>
+      <script>
+   
+   let arr=[10,15,7,6,35,400]
+   function getMultiplicationOnTwo(arr){
+   
+    arr.forEach((element,index,baseArrRef) => {
+        if(element>baseArrRef[0]) baseArrRef[index]*=2
+    })
+    
+   return arr
+   
+   }
+  
+let mult=getMultiplicationOnTwo(arr)
+console.log(mult);
+document.write(mult)
+    </script>
+ </body>
+</html>
