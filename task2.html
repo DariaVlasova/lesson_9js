@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div class="container">
+    <h1>2. Користувач вводить кількість елементів. 
+      Створити масив, у якому перша половина заповнена 1-цями, а друга заповнена 7-ками.
+
+
+
+    </h1>
+    <a href="./index.html">Повернутись до задач</a>
+    
+        <script>
+    let usersQuantity= parseInt(prompt('Введить кількість елементів'))
+ let arr=new Array(usersQuantity)
+ arr.fill(1,0,Math.floor(arr.length/2))
+ arr.fill(7,Math.floor(arr.length/2))
+ console.log(arr);
+       document.write(arr)
+</script>
+</body>
+</html>
